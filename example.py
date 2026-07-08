@@ -28,22 +28,22 @@ arrays = {
     'mode': mode
 }
 
-# # Define high-symmetry point coordinates and labels
-# HSP_conditions = [
-#     {'kx': 0,   'ky': 0,   'kxy': 0},
-#     {'kx': 180, 'ky': 0,   'kxy': 0},
-#     {'kx': 180, 'ky': 180, 'kxy': 0},
-#     {'kx': 180, 'ky': 180, 'kxy': 180}
-# ]
-# HSP_labels = ['$\Gamma$', 'X', 'M', '$\Gamma$']
-# HSP_coords = []
-# for cond in HSP_conditions:
-#     mask = (df['kx'] == cond['kx']) & (df['ky'] == cond['ky']) & (df['kxy'] == cond['kxy'])
-#     row = df[mask]
-#     if not row.empty:
-#         HSP_coords.append(row['id'].iloc[0])
-#     else:
-#         HSP_coords.append(None)
+# Define high-symmetry point coordinates and labels
+HSP_conditions = [
+    {'kx': 0,   'ky': 0,   'kxy': 0},
+    {'kx': 180, 'ky': 0,   'kxy': 0},
+    {'kx': 180, 'ky': 180, 'kxy': 0},
+    {'kx': 180, 'ky': 180, 'kxy': 180}
+]
+HSP_labels = ['$\Gamma$', 'X', 'M', '$\Gamma$']
+HSP_coords = []
+for cond in HSP_conditions:
+    mask = (df['kx'] == cond['kx']) & (df['ky'] == cond['ky']) & (df['kxy'] == cond['kxy'])
+    row = df[mask]
+    if not row.empty:
+        HSP_coords.append(row['id'].iloc[0])
+    else:
+        HSP_coords.append(None)
 
 # Plotting
 fig, axs = plt.subplots(2, 1, figsize=(6, 7))
@@ -51,7 +51,7 @@ ax_disp = axs[0]
 ax_field = axs[1]
 line, = ax_disp.plot(id_k, f, '.', picker=True, pickradius=2)
 ax_disp.set_ylabel('$f$, GHz')
-#ax_disp.set_xticks(HSP_coords, HSP_labels)
+ax_disp.set_xticks(HSP_coords, HSP_labels)
 
 cbar_ax = None
 
