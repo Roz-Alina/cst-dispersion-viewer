@@ -4,7 +4,7 @@
 
 An interactive visualization of a dispersion diagram and eigenmodes profiles from numerical simulations in CST Microwave Studio. 
 
-<img src="dispersion_example.png" width="200" alt="">
+<img src="dispersion_example.png" width="300" alt="">
 
 ## Numerical simulations in CST Microwave Studio
 
