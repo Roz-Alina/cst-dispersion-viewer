@@ -11,6 +11,10 @@ You can click on any point in the dispersion plot or use the **n** / **p** keys 
    ```bash
    git clone https://github.com/Roz-Alina/cst-dispersion-viewer.git
 
+2. Install packages:
+   ```
+   pip install -r requirements.txt
+   ```
 ## Numerical simulations in CST Microwave Studio
 
 Step-by-step [tutorial](Unit_cell_dispersion_in_CST_tutorial.pdf) demonstrates the calculation
