@@ -65,7 +65,7 @@ Each field file is a plain text file with 9 columns (whitespace‑separated):
 
 ## Configuration
 
-Open `plot_dispersion.py` and adjust the user settings:
+Open `example.py` and adjust the user settings:
 
 ```python
 profiles_directory = 'path/to/your/data/folder'
