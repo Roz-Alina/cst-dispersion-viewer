@@ -28,7 +28,7 @@ the high-symmetry points of the Brillouin zone  &Gamma;-X-M-&Gamma; and the extr
 ├── dispersion_example.png                              # Tool screenshot
 ├── dispersion_viewer_utils.py                          # Core functions and the PointBrowser class
 ├── example.py                                          # Main script to run the visualization
-├── requirements.txt                                    # List of requiered packages
+├── requirements.txt                                    # List of required packages
 └── unit_cell_data/                                     # Sample data 
 ```
 
